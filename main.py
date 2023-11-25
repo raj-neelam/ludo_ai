@@ -11,10 +11,10 @@ def update():
         if event.type == pg.QUIT:
             pg.quit()
             return False
-        if event.type == pg.KEYDOWN:
-            if pg.event.key==pg.k_ESCAPE:
-                pg.quit()
-                return False
+        # if event.type == pg.KEYDOWN:
+            # if pg.event.key==pg.k_ESCAPE:
+            #     pg.quit()
+            #     return False
     return True
 def idToCol(v):
     if v==0:return "red"
